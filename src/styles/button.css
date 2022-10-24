@@ -1,14 +1,57 @@
-.Button {
-  transition: all 0.2s ease;
-  cursor: pointer;
-  border-radius: 4px;
-  background: blue;
-  width: fit-content;
-  margin: auto;
-  color: white;
-  padding: 8px 10px;
+.container {
+  height: 100%;
+  width:100%;
+  display:flex ;
+  justify-content: space-around;
+  flex-direction:column;
+  padding:2%;
+  background-color:#C9D1D9;
+  border-radius:10px;
 }
 
-.Button:hover {
-  filter: grayscale(0.5);
+.logo {
+  width: 100%
+}
+
+.word-logo {
+  display: none;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+  .container {
+    width:50%;
+    height: 50% ;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .word-logo {
+    display: block;
+    width: 100%
+  }
+
+}
+
+@media only screen and (min-width: 920px) {
+
+  .container-logos {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2%;
+    margin: 0 5%;
+  }
+
+  .logo {
+    display: block;
+    width: 25%;
+  }
+
+  .word-logo {
+    width: 65%
+  }
+
 }
